@@ -1,31 +1,45 @@
-# 🎋 Mancer Eggplan - Smart Contract Core
+# 🎋 Mancer Eggplan (Pilot Project)
 
-### "Architecture is the art of turning constraints into foundations."
+**Mancer Eggplan** is the foundational RWA (Real World Asset) data infrastructure for poultry farms, serving as the pilot project for the **Mancer Volunteer Program**. 
 
-Repositori ini berisi logika inti (smart contract) untuk **Mancer Eggplan**. Proyek ini difokuskan pada manajemen state terdesentralisasi dalam ekosistem Gmancer, dibangun dengan ketelitian arsitektural di atas jaringan Solana.
-
-## 🏗️ Technical Specifications
-- **Framework**: Anchor 0.30.1
-- **Language**: Rust
-- **Program ID**: `2wufVp4QcwKpdG9xv2EqaxFYwBzBmTdke8mqVYKRUAv7`
-- **Development Environment**: Local Drive E: (Windows-based)
-
-## ⛩️ The Architect's Resilience (Proof of Work)
-Program ini dibangun di bawah "Protokol Underdog". Ketika menghadapi batasan hardware lokal (CPU tidak mendukung AVX untuk Solana Validator), strategi pengembangan dialihkan ke **Verifikasi Semantik Lokal** yang ketat.
-
-- **Integrity Check**: Berhasil melewati `cargo check` dan kompilasi Anchor lokal.
-- **Problem Solving**: Mengintegrasikan toolchain MinGW/dlltool untuk mengatasi hambatan kompilasi pada lingkungan Windows.
-- **Resilience**: Tetap mengeksekusi logika program tanpa ketergantungan pada faucet Devnet yang sering kering.
-
-## 🛠️ Project Structure
-- `programs/mancer_eggplan/src/lib.rs`: "Otak" dari proyek yang berisi logika inisialisasi.
-- `Anchor.toml`: Konfigurasi program dan parameter deployment.
-
-## 🚀 Execution Roadmap
-- [x] Sinkronisasi lingkungan lokal di Drive E:
-- [x] Verifikasi semantik logika inti (`cargo check`).
-- [ ] Deployment ke Devnet (Menunggu ketersediaan faucet).
-- [ ] Integrasi penuh dengan frontend `eggplan-core`.
+This program is designed to cultivate Web3-ready talent through real-world collaboration, where contributors progress from being an "Egg" to learning how to "Fly" in the Web3 economy.
 
 ---
-*Forged with grit and curiosity by SoraOnChain.*
+
+## 🚀 Deployment Info
+- **Network:** Solana Devnet
+- **Program ID:** `Ajd1Gfez1KTWSbDA9ZArQtoFWMS`
+- **Status:** Deployed & Operational
+
+---
+
+## 🥚 Gamified Proof-of-Work System
+The smart contract implements a **Nested Leveling System**. Every contribution earns levels, and every 10 levels, the contributor evolves to a new Stage:
+
+| Stage | Name | Level Range | Status |
+| :--- | :--- | :--- | :--- |
+| **Stage 1** | 🥚 **White Egg** | 1 - 10 | New Explorer |
+| **Stage 2** | 🥚 **Red Egg** | 11 - 20 | Active Contributor |
+| **Stage 3** | 🐣 **Hatchling** | 21 - 30 | Meaningful Contributor |
+| **Stage 4** | 🐤 **Young Bird** | 31 - 40 | Consistent Builder |
+| **Stage 5** | 🦅 **Flying Bird** | 41+ | Web3-Ready Professional |
+
+---
+
+## 🛠️ Technical Logic
+The program is built using the **Anchor Framework**. It stores contributor progress on-chain, ensuring a transparent and immutable **Proof-of-Work portfolio**.
+
+### Core Functions:
+- `initialize(starting_level)`: Registers a new contributor and calculates their initial Stage based on the level provided.
+
+---
+
+## ⛩️ The Architect's Vision
+> "People may join as eggs, grow through contribution, and eventually learn to **fly in the Web3 economy**."
+
+Mancer Eggplan isn't just about data; it's about building the layer of talent that will sustain the future of decentralized infrastructure.
+
+---
+
+## 📜 License
+This project is part of the Mancer Ecosystem. All rights reserved.

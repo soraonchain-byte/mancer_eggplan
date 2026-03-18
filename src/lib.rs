@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 
-// ID Program Anda - Pastikan sinkron dengan Anchor.toml
-declare_id!("2wufVp4QcwKpdG9xv2EqaxFYwBzBmTdke8mqVYKRUAv7");
+// ID Program yang sudah sukses dideploy di Devnet
+declare_id!("Ajd1Gfez1KTWSbDA9ZArQtoFWMS");
 
 #[program]
 pub mod mancer_eggplan {
@@ -23,8 +23,8 @@ pub mod mancer_eggplan {
         account_data.timestamp = clock.unix_timestamp;
 
         // Logika Penentuan Stage (Setiap 10 Level naik 1 Stage)
-        // Level 1-10 / 10 = 0. + 1 = Stage 1
-        // Level 11 / 10 = 1. + 1 = Stage 2
+        // Level 1-10 -> Stage 1
+        // Level 11-20 -> Stage 2
         let current_stage = ((starting_level - 1) / 10) + 1;
 
         msg!("🎋 Mancer Eggplan: Kontributor Baru Berhasil Terdaftar!");
